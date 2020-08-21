@@ -25,7 +25,7 @@ To connect your account, you will need the following information:
 
 | Name | Type | Description
  | ------ | ------ | ------ |
- | X-API-Key | string | The X-API-Key for this api |
+ | X-API-Key | string | The X-API-Key for HYAS Insight |
   
 <br>
 
@@ -87,7 +87,8 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
 
 
  #### Returns
-##### **Body** : [WhoisResult(Historic)](#whoisresult(historic))
+##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
+#####            [WhoisCurrrentResult](#whoiscurrentresult)
 
 <br>
 
@@ -208,7 +209,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 <br>
 
 
-### WhoIsResult(Historic)
+### WhoIsHistoricResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |address | address | string array | Address Information |
@@ -237,7 +238,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
 <br>
 
-### WhoIsResult(Current)
+### WhoIsCurrentResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 | abuse_emails | items.abuse_emails | string array | Abuse contact address | 

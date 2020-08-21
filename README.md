@@ -101,8 +101,8 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | string | IP Address you want to enrich |
- | Email Address | email | True | string |Email Address you want to enrich |
+ | IP Address | ipv4 |  | string | IP Address you want to enrich |
+ | Email Address | email |  | string |Email Address you want to enrich |
 
   #### Returns
 ##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
@@ -119,7 +119,7 @@ Retrieve on demand Passive Hash enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | string | IP Address you want to enrich |
+ | IP Address | ipv4 |  | string | IP Address you want to enrich |
 
  #### Returns
 ##### **Body** : [passiveHashResult](#passivehashresult)
@@ -136,7 +136,7 @@ Retrieve on demand Sinkhole enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | string | IP Address you want to enrich |
+ | IP Address | ipv4 |  | string | IP Address you want to enrich |
 
  #### Returns
 ##### **Body** :  [SinkholeResult](#sinkholeresult)
@@ -153,8 +153,8 @@ Retrieve on demand Device Geo enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
- | IPv6 Address | ipv6 | True | string | IPv6 Address you want to enrich |
+ | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
+ | IPv6 Address | ipv6 |  | string | IPv6 Address you want to enrich |
 
  #### Returns
 ##### **Body** :  [DeviceGeoResult](#devicegeoresult)
@@ -171,7 +171,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | string | IP Address you want to enrich |
+ | IP Address | ipv4 |  | string | IP Address you want to enrich |
  
  #### Returns
 ##### **Body** : [SSLCertificateResult](#sslcertificateresult)

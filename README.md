@@ -123,8 +123,6 @@ Retrieve on demand Passive Hash enrichment data for IP Address
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
  | IP Address | ipv4 | True | string | IP Address you want to enrich |
- 
-<sup>**</sup>Note: The one of the **Required** Parameter should be True.
 
 
  #### Returns

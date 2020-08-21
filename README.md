@@ -63,6 +63,7 @@ Retrieve on demand Passive DNS enrichment data for Domain or IP Address
  | Domain | domain |  | string | Domain you want to enrich |
  | IP Address | ipv4 |  | string | IP Address you want to enrich |
 
+<sup>**</sup>Note: The one of the **Required** Parameter should be True.
 
 #### Returns
 ##### **Body** : [PassiveDNSResults](#passivednsresults)
@@ -80,11 +81,11 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | Domain | domain |  | string | Domain you want to enrich |
+ | Domain | domain |  | string | Domain you want to enrich. If Current is set to true, API will retrieve Whois Current Information, if it set to false (defalut), API will retrieve Whois Historic Information |
  | Email Address | email |  | string | Email Address you want to enrich |
  | Phone Number | phone |  | string | Phone Number you want to enrich ( e164 format. Eg: ( +41585855634 ) ) |
- | Current | phone |  | string | If Current is set to true, API will retrieve Whois Current Information, if it set to false (defalut), API will retrieve Whois Historic Information |
 
+<sup>**</sup>Note: The one of the **Required** Parameter should be True.
 
  #### Returns
 ##### **Body** : <br>[WhoisHistoricResult](#whoishistoricresult)<br>[WhoisCurrrentResult](#whoiscurrentresult)
@@ -103,6 +104,8 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
  | ------ | ------ | ------ | ------ | ------ |
  | IP Address | ipv4 |  | string | IP Address you want to enrich |
  | Email Address | email |  | string |Email Address you want to enrich |
+ 
+ <sup>**</sup>Note: The one of the **Required** Parameter should be True.
 
   #### Returns
 ##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
@@ -119,7 +122,10 @@ Retrieve on demand Passive Hash enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 |  | string | IP Address you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
+ 
+<sup>**</sup>Note: The one of the **Required** Parameter should be True.
+
 
  #### Returns
 ##### **Body** : [passiveHashResult](#passivehashresult)
@@ -136,7 +142,7 @@ Retrieve on demand Sinkhole enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 |  | string | IP Address you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
 
  #### Returns
 ##### **Body** :  [SinkholeResult](#sinkholeresult)
@@ -155,6 +161,8 @@ Retrieve on demand Device Geo enrichment data for IP Address
  | ------ | ------ | ------ | ------ | ------ |
  | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
  | IPv6 Address | ipv6 |  | string | IPv6 Address you want to enrich |
+ 
+ <sup>**</sup>Note: The one of the **Required** Parameter should be True.
 
  #### Returns
 ##### **Body** :  [DeviceGeoResult](#devicegeoresult)
@@ -171,7 +179,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 |  | string | IP Address you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
  
  #### Returns
 ##### **Body** : [SSLCertificateResult](#sslcertificateresult)

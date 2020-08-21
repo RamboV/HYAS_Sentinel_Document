@@ -298,7 +298,6 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |domain | domain | string |The domain associated with the Dynamic DNS information |
 |domain_creator_ip | domain_creator_ip | string | The IP address of the domain creator |
 |email | email | string | The email address connected to the domain | Personal Identity Email Information |
-| geo_country_alpha_2 | geo_country_alpha_2 | string | 
 
 <br>
 

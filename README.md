@@ -284,7 +284,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | whois_related_pii_id | items.whois_pii.whois_related_pii_id | string | Personal Identity Id Information |
 | whois_related_type | items.whois_pii.whois_related_type | string | Personal Identity Related Information |
 | source | source | string | Source Information |
-| total_count | total_count | integer | Total Count Information |
+| total_count | total_count | number | Total Count Information |
 
 <br>
 
@@ -306,7 +306,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |domain | domain | string | The domain of the passive hash information requested |
-|md5_count | md5_count | string | MD5 hash count |
+|md5_count | md5_count | number | MD5 hash count |
 
 <br>
 
@@ -316,7 +316,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | ------ | ------ | ------ | ------ |
 |count | count | string | The sinkhole counts |
 |country_name | country_name | string | The country of the IP |
-|data_port | data_port | Integer | The data port |
+|data_port | data_port | number | The data port |
 |datetime | datetime | string | The first seen date of the sinkhole |
 |ipv4 | ipv4 | string |  The ipv4 of the sinkhole |
 |last_seen | last_seen | string | The last seen date of the sinkhole |
@@ -333,7 +333,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |device_geo_id | device_geo_id | string | Geolocation ID |
 |device_user_agent | device_user_agent | string | The user agent for the device |
 |geo_country_alpha_2 | geo_country_alpha_2 | string | The ISO 3316 alpha-2 code for the country associated with the latitude/longitude reported |
-|geo_horizontal_accuracy | geo_horizontal_accuracy | string | Geolocation accuracy Information |
+|geo_horizontal_accuracy | geo_horizontal_accuracy | number | Geolocation accuracy Information |
 |ipv4 | ipv4 | string | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
 |ipv6 | ipv6 | string | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
 |latitude | latitude | number | Units are degrees on the WGS 84 spheroid |
@@ -347,7 +347,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 ### SSLCertificateResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-|related_count | related_count | integer | The number of IP addresses connected to this certificate |
+|related_count | related_count | number | The number of IP addresses connected to this certificate |
 |ip | ssl_certs.ip | string | The IP address associated with certificate |
 |cert_key | ssl_certs.ssl_cert.cert_key | string | The certificate key (sha1) |
 |expire_date | ssl_certs.ssl_cert.expire_date | string |The expiry date of the certificate |
@@ -359,12 +359,12 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |issuer_organizationalUnitName| ssl_certs.ssl_cert.issuer_organizationalUnitName | string |  The organization name that issued the certificate |
 |issuer_stateOrProvinceName | ssl_certs.ssl_cert.issuer_stateOrProvinceName | string | The state or province where the issuer company is legally located |
 |md5 | ssl_certs.ssl_cert.md5 | string | SSL certificate MD5 Hash |
-|serial_number | ssl_certs.ssl_cert.serial_number |  integer | SSL certificate Serial Number |
+|serial_number | ssl_certs.ssl_cert.serial_number |  number | SSL certificate Serial Number |
 |sha1 | ssl_certs.ssl_cert.sha1 | string |  SSL certificate SHA1 Hash |
 |sha_256 | ssl_certs.ssl_cert.sha_256 | string | SSL certificate SHA 256 Hash |
 |sig_algo | ssl_certs.ssl_cert.sig_algo | string | SSL certificate signing algorithm |
 |signature | ssl_certs.ssl_cert.signature | string array | SSL certificate signature |
-|ssl_version | ssl_certs.ssl_cert.ssl_version | integer | SSL Version Information |
+|ssl_version | ssl_certs.ssl_cert.ssl_version | number | SSL Version Information |
 |subject_commonName | ssl_certs.ssl_cert.subject_commonName | string |  The subject name that the certificate was issued to |
 |subject_countryName | ssl_certs.ssl_cert.subject_countryName | string | The country the certificate was issued to |
 |subject_localityName | ssl_certs.ssl_cert.subject_localityName | string |  The city where the subject company is legally located |

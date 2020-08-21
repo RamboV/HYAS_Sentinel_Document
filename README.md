@@ -87,7 +87,7 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
 
 
  #### Returns
-##### **Body** : [WhoisResult](#whoisresult)
+##### **Body** : [WhoisResult(Historic)](#whoisresult(historic))
 
 <br>
 
@@ -208,7 +208,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 <br>
 
 
-### WhoIsResult
+### WhoIsResult(Historic)
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |address | address | string array | Address Information |
@@ -237,6 +237,49 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
 <br>
 
+### WhoIsResult(Current)
+| Name | Path | Type | Description
+| ------ | ------ | ------ | ------ |
+| abuse_emails | items.abuse_emails | string array | Abuse contact address | 
+| address | items.address | string array | Address Information |
+| city | items.city | string array | The city of the registrant |
+| country  | items.country  | string array | The country of the registrant |
+| data | items.data | string | Data Information |
+| datetime | items.datetime | string | Date Time Information |
+| domain | items.domain | string | The domain of the registrant |
+| domain_2tld | items.domain_2tld | string | The second-level domain of the registrant |
+| domain_created_datetime | items.domain_created_datetime | string | The date and time when the Whois record was created |
+| domain_expires_datetime | items.domain_expires_datetime | string | The date and time when the Whois record expires |
+| domain_updated_datetime | items.domain_updated_datetime | string | The date and time when the Whois record was last updated |
+| email | items.email | string array | Email Information |
+| idn_name | items.idn_name | string | The international domain name |
+| meta_data | items.meta_data | string | Metadata Information |
+| name | items.name | string array | The contact name (registrant contact, administrative contact, technical contact, or abuse contact) |
+| nameserver | items.nameserver | string array | The nameserver domain |
+| organization | items.organization | string array | Organization Information |
+| phone | items.phone | string array | The phone number of the registrant in e164 format |
+| registrar | items.registrar  | string | The domain registrar |
+| state | items.state | string array | The state where domain was registered |
+| whois_hash | items.whois_hash | string | Hash Information |
+| whois_id | items.whois_id | string | Id Information |
+| domain | items.whois_nameserver.domain | string | Nameserver’s Domain Information |
+| domain_2tld | items.whois_nameserver.domain_2tld | string | Nameserver’s Domain_2tld Information |
+| whois_related_nameserver_id | items.whois_nameserver.whois_related_nameserver_id | string | Nameserver’s Id Information |
+| address | items.whois_pii.address | string | Personal Identity Address Information |
+| city | items.whois_pii.city | string | Personal Identity City Information |
+| data | items.whois_pii.data | string | Personal Identity Data Information |
+| email | items.whois_pii.email | string | Personal Identity Email Information |
+| geo_country_alpha_2 | items.whois_pii.geo_country_alpha_2 | String | Personal Identity Country Information |
+| name | items.whois_pii.name | string | Personal Identity Name Information |
+| organization | items.whois_pii.organization| string | Personal Identity Organization Information |
+| phone_e164 | items.whois_pii.phone_e164 | string | Personal Identity Phone_e164 Information |
+| state | items.whois_pii.state | string | Personal Identity State Information |
+| whois_related_pii_id | items.whois_pii.whois_related_pii_id | string | Personal Identity Id Information |
+| whois_related_type | items.whois_pii.whois_related_type | string | Personal Identity Related Information |
+| source | source | string | Source Information |
+| total_count | total_count | integer | Total Count Information |
+
+<br>
 
 ### DynamicDNSResult
 | Name | Path | Type | Description
@@ -247,7 +290,8 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |created_ip | created_ip | string | The IP address of the account holder |
 |domain | domain | string |The domain associated with the Dynamic DNS information |
 |domain_creator_ip | domain_creator_ip | string | The IP address of the domain creator |
-|email | email | string | The email address connected to the domain |
+|email | email | string | The email address connected to the domain | Personal Identity Email Information |
+| geo_country_alpha_2 | geo_country_alpha_2 | string | 
 
 <br>
 

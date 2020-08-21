@@ -316,7 +316,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | ------ | ------ | ------ | ------ |
 |count | count | string | The sinkhole counts |
 |country_name | country_name | string | The country of the IP |
-|data_port | data_port | string | The data port |
+|data_port | data_port | Integer | The data port |
 |datetime | datetime | string | The first seen date of the sinkhole |
 |ipv4 | ipv4 | string |  The ipv4 of the sinkhole |
 |last_seen | last_seen | string | The last seen date of the sinkhole |

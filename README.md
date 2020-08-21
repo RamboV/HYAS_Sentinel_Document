@@ -87,8 +87,7 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
 
 
  #### Returns
-##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
-#####            [WhoisCurrrentResult](#whoiscurrentresult)
+##### **Body** : <br>[WhoisHistoricResult](#whoishistoricresult)<br>[WhoisCurrrentResult](#whoiscurrentresult)
 
 <br>
 

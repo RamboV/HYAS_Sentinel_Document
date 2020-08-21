@@ -192,8 +192,8 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | ------ | ------ | ------ | ------ |
 | cert_name | cert_name | string | The certificate name Information |
 |count | count | string | The passive DNS count |
-|domain| domain | string | The domain Information |
-|first_seen | first_seen | string | The first seen Information | 
+|domain| domain | string | The domain of the passive dns information requested |
+|first_seen | first_seen | string | The first time this domain was seen | 
 |city_name | ip.geo.city_name | string | The city name Information |
 |country_iso_code | ip.geo.country_iso_code | string | The country ISO code Information |
 |country_name | ip.geo.country_name | string | The country name Information |
@@ -206,9 +206,9 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |ip_address | ip.isp.ip_address | string | The IP Address Information |
 |isp | ip.isp.isp | string | The ISP Information |
 |organization | ip.isp.organization | string |The ISP organization Information |
-|ipv4 | ipv4 | string | The ipv4 address Information |
-|ipv6 | ipv6 | string | The ipv6 address Information |
-|last_seen | last_seen | string | The last seen Information |
+|ipv4 | ipv4 | string | The ipv4 address of the passive dns record |
+|ipv6 | ipv6 | string | The ipv6 address of the passive dns record |
+|last_seen | last_seen | string | The last time this domain was seen |
 |sha1 | sha1 | string | The sha1 sum Information |
 |sources | sources | string array | sources Information |
 

@@ -306,7 +306,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |domain | domain | string | The domain of the passive hash information requested |
-|md5_count | md5_count | number | The passive dns count |
+|md5_count | md5_count | string | The passive dns count |
 
 <br>
 

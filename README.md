@@ -63,7 +63,7 @@ Retrieve on demand Passive DNS enrichment data for Domain or IP Address
  | Domain | domain |  | string | Domain you want to enrich |
  | IP Address | ipv4 |  | string | IP Address you want to enrich |
 
-**Note**: Any one of the parameters is required.
+**Note: Any one of the parameters is required.**
 
 #### Returns
 ##### **Body** : [PassiveDNSResults](#passivednsresults)
@@ -85,7 +85,7 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
  | Email Address | email |  | string | Email Address you want to enrich |
  | Phone Number | phone |  | string | Phone Number you want to enrich ( e164 format. Eg: ( +41585855634 ) ) |
 
-**Note**: Any one of the parameters is required.
+**Note: Any one of the parameters is required.**
 
  #### Returns
 ##### **Body** : <br>[WhoisResult](#whoishistoricresult)<br> If Current is set to true: [WhoisResult](#whoiscurrentresult)
@@ -106,7 +106,7 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
  | IP Address | ipv4 |  | string | IP Address you want to enrich |
  | Email Address | email |  | string |Email Address you want to enrich |
  
-**Note**: Any one of the parameters is required.
+**Note: Any one of the parameters is required.**
 
   #### Returns
 ##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
@@ -161,7 +161,7 @@ Retrieve on demand Device Geo enrichment data for IP Address
  | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
  | IPv6 Address | ipv6 |  | string | IPv6 Address you want to enrich |
  
-**Note**: Any one of the parameters is required.
+**Note: Any one of the parameters is required.**
 
  #### Returns
 ##### **Body** :  [DeviceGeoResult](#devicegeoresult)

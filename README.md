@@ -359,12 +359,12 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |issuer_organizationalUnitName| ssl_certs.ssl_cert.issuer_organizationalUnitName | string | The organization unit name that issued the certificate |
 |issuer_stateOrProvinceName | ssl_certs.ssl_cert.issuer_stateOrProvinceName | string | The issuer state or province |
 |md5 | ssl_certs.ssl_cert.md5 | string | The certificate MD5 |
-|serial_number | ssl_certs.ssl_cert.serial_number |  string | The certificate serial number |
+|serial_number | ssl_certs.ssl_cert.serial_number |  number | The certificate serial number |
 |sha1 | ssl_certs.ssl_cert.sha1 | string | The certificate sha1 |
 |sha_256 | ssl_certs.ssl_cert.sha_256 | string | The certificate sha256 |
 |sig_algo | ssl_certs.ssl_cert.sig_algo | string | The certificate signature algorithm |
 |signature | ssl_certs.ssl_cert.signature | string array | Signature split into multiple lines |
-|ssl_version | ssl_certs.ssl_cert.ssl_version | string | The SSL version |
+|ssl_version | ssl_certs.ssl_cert.ssl_version | number | The SSL version |
 |subject_commonName | ssl_certs.ssl_cert.subject_commonName | string | The subject name that the certificate was issued to |
 |subject_countryName | ssl_certs.ssl_cert.subject_countryName | string | The country the certificate was issued to |
 |subject_localityName | ssl_certs.ssl_cert.subject_localityName | string |  The city where the subject company is legally located |

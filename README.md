@@ -191,7 +191,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 | cert_name | cert_name | string | The certificate provider name |
-|count | count | string | The passive dns count |
+|count | count | number | The passive dns count |
 |domain| domain | string | The domain of the passive dns information requested |
 |first_seen | first_seen | string | The first time this domain was seen | 
 |city_name | ip.geo.city_name | string | City of the ip organization |

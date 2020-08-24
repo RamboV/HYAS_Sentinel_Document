@@ -330,7 +330,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |datetime | datetime | string | A date-time string in RFC 3339 format |
-|device_geo_id | device_geo_id | undefined | Internal record ID |
+|device_geo_id | device_geo_id | number | Internal record ID |
 |device_user_agent | device_user_agent | string | The user agent for the device |
 |geo_country_alpha_2 | geo_country_alpha_2 | string | The ISO 3316 alpha-2 code for the country associated with the latitude/longitude reported |
 |geo_horizontal_accuracy | geo_horizontal_accuracy | string | The GPS horizontal accuracy |

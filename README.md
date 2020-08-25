@@ -333,7 +333,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |device_geo_id | device_geo_id | string | Internal record ID |
 |device_user_agent | device_user_agent | string | The user agent for the device |
 |geo_country_alpha_2 | geo_country_alpha_2 | string | The ISO 3316 alpha-2 code for the country associated with the latitude/longitude reported |
-|geo_horizontal_accuracy | geo_horizontal_accuracy | string | The GPS horizontal accuracy |
+|geo_horizontal_accuracy | geo_horizontal_accuracy | number | The GPS horizontal accuracy |
 |ipv4 | ipv4 | string | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
 |ipv6 | ipv6 | string | The ipv6 address assigned to the device. A device may have either or ipv4 and ipv6 |
 |latitude | latitude | number | Units are degrees on the WGS 84 spheroid |

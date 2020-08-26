@@ -50,9 +50,10 @@ To connect your account, you will need the following information:
   | [Retrieve Dynamic DNS Information for Email Address](#retrieve-dynamic-dns-information-for-ip-email-address) | Retrieve on demand Dynamic DNS enrichment data for Email Address |
   | [Retrieve Passive Hash Information for IP Address](#retrieve-passive-hash-information-for-ip-address) |Retrieve on demand Passive Hash enrichment data for IP Address |
   | [Retrieve Sinkhole Information for IP Address](#retrieve-sinkhole-information-for-ip-address) | Retrieve on demand Sinkhole enrichment data for IP Address |
+  | [Retrieve SSL Certificate Information for IP Address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve on demand SSL Certificate enrichment data for IP Address |
   | [Retrieve Device Geo Information for IPv4 Address](#retrieve-device-geo-information-for-ipv4-address) | Retrieve on demand Device Geo enrichment data for IPv4 Address |
   | [Retrieve Device Geo Information for IPv6 Address](#retrieve-device-geo-information-for-ipv6-address) | Retrieve on demand Device Geo enrichment data for IPv6 Address |
-  | [Retrieve SSL Certificate Information for IP Address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve on demand SSL Certificate enrichment data for IP Address |
+  
 
 <br>
 

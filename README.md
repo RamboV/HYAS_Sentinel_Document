@@ -41,8 +41,8 @@ To connect your account, you will need the following information:
  | Action Name | Description
   | ------ | ------ |
   | [Retrieve Passive DNS Information for Domain or IP Address](#retrieve-passive-dns-information-for-domain-or-ip-address) |  Retrieve on demand Passive DNS enrichment data for Domain or IP Address |
-  | [Retrieve Whois Historic Information for Domain or Email Address or Phone Number](#retrieve-whois-information-for-domain-or-email-address-or-phone-number) | Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber |
-   | [Retrieve Whois Current Information for Domain](#retrieve-whois-information-for-domain-or-email-address-or-phone-number) | Retrieve on demand Current Whois enrichment data for Domain |
+  | [Retrieve Whois Historic Information for Domain or Email Address or Phone Number](#retrieve-whois-historic-information-for-domain-or-email-address-or-phone-number) | Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber |
+   | [Retrieve Whois Current Information for Domain](#retrieve-whois-current-information-for-domain) | Retrieve on demand Whois Current enrichment data for Domain |
   | [Retrieve Dynamic DNS Information for IP Address or Email Address](#retrieve-dynamic-dns-information-for-ip-address-or-email-address) | Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address |
   | [Retrieve Passive Hash Information for IP Address](#retrieve-passive-hash-information-for-ip-address) |Retrieve on demand Passive Hash enrichment data for IP Address |
 | [Retrieve Sinkhole Information for IP Address](#retrieve-sinkhole-information-for-ip-address) | Retrieve on demand Sinkhole enrichment data for IP Address |
@@ -72,11 +72,11 @@ Retrieve on demand Passive DNS enrichment data for Domain or IP Address
 <br>
 
 
-### Retrieve Whois Information for Domain or Email Address or Phone Number
+### Retrieve Whois Historic Information for Domain or Email Address or Phone Number
 
-Operation ID: WHOIS
+Operation ID: WHOIS_HISTORIC
 
-Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Number
+Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber
 
  #### Parameters
 
@@ -89,7 +89,25 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
 **Note: Any one of the parameters is required.**
 
  #### Returns
-##### **Body** : <br>[WhoisResult](#whoishistoricresult)<br> If Current is set to true: [WhoisResult](#whoiscurrentresult)
+##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
+
+<br>
+
+### Retrieve Whois Current Information for Domain
+
+Operation ID: WHOIS_CURRENT
+
+Retrieve on demand Whois Current enrichment data for Domain
+
+ #### Parameters
+
+ | Name | Key | Required | Type | Description
+ | ------ | ------ | ------ | ------ | ------ |
+ | Domain | domain |  | string | Domain you want to enrich. If Current is set to true, API will retrieve Whois Current Information, if it set to false (defalut), API will retrieve Whois Historic Information |
+
+
+ #### Returns
+##### **Body** : [WhoisCurrentResult](#whoiscurrentresult)
 
 
 <br>

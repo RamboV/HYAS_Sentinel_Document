@@ -97,7 +97,7 @@ Retrieve on demand Passive DNS enrichment data for IP Address
 
 Operation ID: DOMAIN_WHOIS_HISTORIC
 
-Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber
+Retrieve on demand Whois Historic enrichment data for Domain
 
  #### Parameters
 
@@ -114,7 +114,7 @@ Retrieve on demand Whois Historic enrichment data for Domain or Email Address or
 
 Operation ID: EMAIL_WHOIS_HISTORIC
 
-Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber
+Retrieve on demand Whois Historic enrichment data for Email Address
 
  #### Parameters
 
@@ -131,7 +131,7 @@ Retrieve on demand Whois Historic enrichment data for Domain or Email Address or
 
 Operation ID: PHONE_WHOIS_HISTORIC
 
-Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber
+Retrieve on demand Whois Historic enrichment data for PhoneNumber
 
  #### Parameters
 
@@ -238,7 +238,7 @@ Retrieve on demand Sinkhole enrichment data for IP Address
 
 Operation ID: IPV4_DEVICE_GEO
 
-Retrieve on demand Device Geo enrichment data for IPv4 Address
+Retrieve on demand Device Geo enrichment data for IP Address
 
  #### Parameters
 

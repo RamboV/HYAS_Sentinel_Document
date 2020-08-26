@@ -62,7 +62,7 @@ Retrieve on demand Passive DNS enrichment data for Domain or IP Address
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
  | Domain | domain |  | string | Domain you want to enrich |
- | IP Address | ipv4 |  | string | IPv4 Address you want to enrich |
+ | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
 
 **Note: Any one of the parameters is required.**
 
@@ -122,7 +122,7 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 |  | string | IPv4 Address you want to enrich |
+ | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
  | Email Address | email |  | string |Email Address you want to enrich |
  
 **Note: Any one of the parameters is required.**
@@ -142,7 +142,7 @@ Retrieve on demand Passive Hash enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | string | IPv4 Address you want to enrich |
+ | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
 
 
  #### Returns
@@ -160,7 +160,7 @@ Retrieve on demand Sinkhole enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | string | IPv4 Address you want to enrich |
+ | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
 
  #### Returns
 ##### **Body** :  [SinkholeResult](#sinkholeresult)
@@ -197,7 +197,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | string | IPv4 Address you want to enrich |
+ | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
  
  #### Returns
 ##### **Body** : [SSLCertificateResult](#sslcertificateresult)

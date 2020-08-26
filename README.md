@@ -82,7 +82,7 @@ Retrieve on demand Whois Historic enrichment data for Domain or Email Address or
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | Domain | domain |  | string | Domain you want to enrich. If Current is set to true, API will retrieve Whois Current Information, if it set to false (defalut), API will retrieve Whois Historic Information |
+ | Domain | domain |  | string | Domain you want to enrich |
  | Email Address | email |  | string | Email Address you want to enrich |
  | Phone Number | phone |  | string | Phone Number you want to enrich ( e164 format. Eg: ( +41585855634 ) ) |
 
@@ -103,7 +103,7 @@ Retrieve on demand Whois Current enrichment data for Domain
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | Domain | domain | True | string | Domain you want to enrich. If Current is set to true, API will retrieve Whois Current Information, if it set to false (defalut), API will retrieve Whois Historic Information |
+ | Domain | domain | True | string | Domain you want to enrich |
 
 
  #### Returns

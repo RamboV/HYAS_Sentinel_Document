@@ -40,41 +40,61 @@ To connect your account, you will need the following information:
  ## Actions:
  | Action Name | Description
   | ------ | ------ |
-  | [Retrieve Passive DNS Information for Domain or IP Address](#retrieve-passive-dns-information-for-domain-or-ip-address) |  Retrieve on demand Passive DNS enrichment data for Domain or IP Address |
-  | [Retrieve Whois Historic Information for Domain or Email Address or Phone Number](#retrieve-whois-historic-information-for-domain-or-email-address-or-phone-number) | Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber |
-   | [Retrieve Whois Current Information for Domain](#retrieve-whois-current-information-for-domain) | Retrieve on demand Whois Current enrichment data for Domain |
-  | [Retrieve Dynamic DNS Information for IP Address or Email Address](#retrieve-dynamic-dns-information-for-ip-address-or-email-address) | Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address |
+  | [Retrieve Passive DNS Information for Domain](#retrieve-passive-dns-information-for-domain) |  Retrieve on demand Passive DNS enrichment data for Domain |
+  | [Retrieve Passive DNS Information for IP Address](#retrieve-passive-dns-information-for-ip-address) |  Retrieve on demand Passive DNS enrichment data for IP Address |
+  | [Retrieve Whois Historic Information for Domain](#retrieve-whois-historic-information-for-domain) | Retrieve on demand Whois Historic enrichment data for Domain |
+  | [Retrieve Whois Historic Information for Email Address](#retrieve-whois-historic-information-for-email-address) | Retrieve on demand Whois Historic enrichment data for Email Address |
+  | [Retrieve Whois Historic Information for Phone Number](#retrieve-whois-historic-information-for-phone-number) | Retrieve on demand Whois Historic enrichment data for PhoneNumber |
+  | [Retrieve Whois Current Information for Domain](#retrieve-whois-current-information-for-domain) | Retrieve on demand Whois Current enrichment data for Domain |
+  | [Retrieve Dynamic DNS Information for IP Address](#retrieve-dynamic-dns-information-for-ip-address) | Retrieve on demand Dynamic DNS enrichment data for IP Address |
+  | [Retrieve Dynamic DNS Information for Email Address](#retrieve-dynamic-dns-information-for-ip-email-address) | Retrieve on demand Dynamic DNS enrichment data for Email Address |
   | [Retrieve Passive Hash Information for IP Address](#retrieve-passive-hash-information-for-ip-address) |Retrieve on demand Passive Hash enrichment data for IP Address |
-| [Retrieve Sinkhole Information for IP Address](#retrieve-sinkhole-information-for-ip-address) | Retrieve on demand Sinkhole enrichment data for IP Address |
-  | [Retrieve Device Geo Information for IP Address](#retrieve-device-geo-information-for-ip-address) | Retrieve on demand Device Geo enrichment data for IP Address |
- | [Retrieve SSL Certificate Information for IP Address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve on demand SSL Certificate enrichment data for IP Address |
+  | [Retrieve Sinkhole Information for IP Address](#retrieve-sinkhole-information-for-ip-address) | Retrieve on demand Sinkhole enrichment data for IP Address |
+  | [Retrieve Device Geo Information for IPv4 Address](#retrieve-device-geo-information-for-ipv4-address) | Retrieve on demand Device Geo enrichment data for IPv4 Address |
+  | [Retrieve Device Geo Information for IPv6 Address](#retrieve-device-geo-information-for-ipv6-address) | Retrieve on demand Device Geo enrichment data for IPv6 Address |
+  | [Retrieve SSL Certificate Information for IP Address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve on demand SSL Certificate enrichment data for IP Address |
 
 <br>
 
-### Retrieve Passive DNS Information for Domain or IP Address
+### Retrieve Passive DNS Information for Domain
 
-Operation ID: PASSIVE_DNS
+Operation ID: DOMAIN_PASSIVE_DNS
 
-Retrieve on demand Passive DNS enrichment data for Domain or IP Address
+Retrieve on demand Passive DNS enrichment data for Domain
 
 #### Parameters
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | Domain | domain |  | string | Domain you want to enrich |
- | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
+ | Domain | domain | True  | string | Domain you want to enrich |
 
-**Note: Any one of the parameters is required.**
 
 #### Returns
 ##### **Body** : [PassiveDNSResults](#passivednsresults)
 
 <br>
 
+### Retrieve Passive DNS Information for IP Address
 
-### Retrieve Whois Historic Information for Domain or Email Address or Phone Number
+Operation ID: IP_PASSIVE_DNS
 
-Operation ID: WHOIS_HISTORIC
+Retrieve on demand Passive DNS enrichment data for IP Address
+
+#### Parameters
+
+ | Name | Key | Required | Type | Description
+ | ------ | ------ | ------ | ------ | ------ |
+ | IPv4 Address | ipv4 |  True | string | IPv4 Address you want to enrich |
+
+
+#### Returns
+##### **Body** : [PassiveDNSResults](#passivednsresults)
+
+<br>
+
+### Retrieve Whois Historic Information for Domain
+
+Operation ID: DOMAIN_WHOIS_HISTORIC
 
 Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber
 
@@ -82,11 +102,41 @@ Retrieve on demand Whois Historic enrichment data for Domain or Email Address or
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | Domain | domain |  | string | Domain you want to enrich |
- | Email Address | email |  | string | Email Address you want to enrich |
- | Phone Number | phone |  | string | Phone Number you want to enrich ( e164 format. Eg: ( +41585855634 ) ) |
+ | Domain | domain | True | string | Domain you want to enrich |
 
-**Note: Any one of the parameters is required.**
+ #### Returns
+##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
+
+<br>
+
+### Retrieve Whois Historic Information for Email Address
+
+Operation ID: EMAIL_WHOIS_HISTORIC
+
+Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber
+
+ #### Parameters
+
+ | Name | Key | Required | Type | Description
+ | ------ | ------ | ------ | ------ | ------ |
+ | Email Address | email | True  | string | Email Address you want to enrich |
+
+ #### Returns
+##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
+
+<br>
+
+### Retrieve Whois Historic Information for Phone Number
+
+Operation ID: PHONE_WHOIS_HISTORIC
+
+Retrieve on demand Whois Historic enrichment data for Domain or Email Address or PhoneNumber
+
+ #### Parameters
+
+ | Name | Key | Required | Type | Description
+ | ------ | ------ | ------ | ------ | ------ |
+ | Phone Number | phone | True  | string | Phone Number you want to enrich ( e164 format. Eg: ( +41585855634 ) ) |
 
  #### Returns
 ##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
@@ -112,23 +162,39 @@ Retrieve on demand Whois Current enrichment data for Domain
 
 <br>
 
-### Retrieve Dynamic DNS Information for IP Address or Email Address
+### Retrieve Dynamic DNS Information for IP Address
 
-Operation ID: DYNAMIC_DNS
+Operation ID: IP_DYNAMIC_DNS
 
-Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
+Retrieve on demand Dynamic DNS enrichment data for IP Address
 
  #### Parameters
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
- | Email Address | email |  | string |Email Address you want to enrich |
- 
-**Note: Any one of the parameters is required.**
+ | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
+
 
   #### Returns
 ##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
+
+<br>
+
+### Retrieve Dynamic DNS Information for Email Address
+
+Operation ID: DYNAMIC_DNS
+
+Retrieve on demand Dynamic DNS enrichment data for Email Address
+
+ #### Parameters
+
+ | Name | Key | Required | Type | Description
+ | ------ | ------ | ------ | ------ | ------ |
+ | Email Address | email | True | string |Email Address you want to enrich |
+ 
+  #### Returns
+##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
+
 
 <br>
 
@@ -167,18 +233,34 @@ Retrieve on demand Sinkhole enrichment data for IP Address
 
 <br>
 
-### Retrieve Device Geo Information for IP Address
+### Retrieve Device Geo Information for IPv4 Address
 
-Operation ID: DEVICE_GEO
+Operation ID: IPV4_DEVICE_GEO
 
-Retrieve on demand Device Geo enrichment data for IP Address
+Retrieve on demand Device Geo enrichment data for IPv4 Address
 
  #### Parameters
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IPv4 Address | ipv4 |  | string | IPv4 Address you want to enrich |
- | IPv6 Address | ipv6 |  | string | IPv6 Address you want to enrich |
+ | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
+
+ #### Returns
+##### **Body** :  [DeviceGeoResult](#devicegeoresult)
+
+<br>
+
+### Retrieve Device Geo Information for IPv6 Address
+
+Operation ID: IPV6_DEVICE_GEO
+
+Retrieve on demand Device Geo enrichment data for IPv6 Address
+
+ #### Parameters
+
+ | Name | Key | Required | Type | Description
+ | ------ | ------ | ------ | ------ | ------ |
+ | IPv6 Address | ipv6 | True | string | IPv6 Address you want to enrich |
  
 **Note: Any one of the parameters is required.**
 
@@ -186,6 +268,7 @@ Retrieve on demand Device Geo enrichment data for IP Address
 ##### **Body** :  [DeviceGeoResult](#devicegeoresult)
 
 <br>
+
 
 ### Retrieve SSL Certificate Information for IP Address
 

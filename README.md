@@ -238,7 +238,7 @@ Retrieve on demand Sinkhole enrichment data for IP Address
 
 Operation ID: IPV4_DEVICE_GEO
 
-Retrieve on demand Device Geo enrichment data for IP Address
+Retrieve on demand Device Geo enrichment data for IPv4 Address
 
  #### Parameters
 

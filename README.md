@@ -47,7 +47,7 @@ To connect your account, you will need the following information:
   | [Retrieve Whois Historic Information for Phone Number](#retrieve-whois-historic-information-for-phone-number) | Retrieve on demand Whois Historic enrichment data for PhoneNumber |
   | [Retrieve Whois Current Information for Domain](#retrieve-whois-current-information-for-domain) | Retrieve on demand Whois Current enrichment data for Domain |
   | [Retrieve Dynamic DNS Information for IP Address](#retrieve-dynamic-dns-information-for-ip-address) | Retrieve on demand Dynamic DNS enrichment data for IP Address |
-  | [Retrieve Dynamic DNS Information for Email Address](#retrieve-dynamic-dns-information-for-ip-email-address) | Retrieve on demand Dynamic DNS enrichment data for Email Address |
+  | [Retrieve Dynamic DNS Information for Email Address](#retrieve-dynamic-dns-information-for-email-address) | Retrieve on demand Dynamic DNS enrichment data for Email Address |
   | [Retrieve Passive Hash Information for IP Address](#retrieve-passive-hash-information-for-ip-address) |Retrieve on demand Passive Hash enrichment data for IP Address |
   | [Retrieve Sinkhole Information for IP Address](#retrieve-sinkhole-information-for-ip-address) | Retrieve on demand Sinkhole enrichment data for IP Address |
   | [Retrieve SSL Certificate Information for IP Address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve on demand SSL Certificate enrichment data for IP Address |

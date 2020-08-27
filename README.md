@@ -333,8 +333,8 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |email | email | string array | The email information |
 |idn_name | idn_name | string | The international domain name |
 |meta_data | meta_data | string | The metadata information |
-|name | name | string array | The contact name (registrant contact, administrative contact, technical contact, or abuse contact) |
-|nameserver | nameserver | string array |  The nameserver domain |
+|name | name | string array | The name information |
+|nameserver | nameserver | string array |  The nameserver information |
 |phone | phone.phone | string |  The phone number of the registrant in e164 format |
 |carrier | phone.phone_info.carrier | string | Phone number carrier |
 |country | phone.phone_info.country | string | Phone number country |

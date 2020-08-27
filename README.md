@@ -338,7 +338,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |phone | phone.phone | string |  The phone number of the registrant in e164 format |
 |carrier | phone.phone_info.carrier | string | Phone number carrier |
 |country | phone.phone_info.country | string | Phone number country |
-|geo | phone.phone_info.geo | string | Phone number geo Can be city or province or region or country |
+|geo | phone.phone_info.geo | string | Phone number geo can be city or province or region or country |
 |privacy_punch | privacy_punch | boolean | True if this record has additional information bypassing privacy protect |
 |registrar | registrar | string |  The domain registrar |
 |whois_hash | whois_hash | string | Internal use |

@@ -263,7 +263,6 @@ Retrieve on demand Device Geo enrichment data for IPv6 Address
  | ------ | ------ | ------ | ------ | ------ |
  | IPv6 Address | ipv6 | True | string | IPv6 Address you want to enrich |
  
-**Note: Any one of the parameters is required.**
 
  #### Returns
 ##### **Body** :  [DeviceGeoResult](#devicegeoresult)

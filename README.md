@@ -173,7 +173,7 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
+ | IPv4 Address | ip | True | string | IPv4 Address you want to enrich |
 
 
   #### Returns
@@ -280,7 +280,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
+ | IPv4 Address | ip | True | string | IPv4 Address you want to enrich |
  
  #### Returns
 ##### **Body** : [SSLCertificateResult](#sslcertificateresult)

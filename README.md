@@ -44,7 +44,7 @@ To connect your account, you will need the following information:
   | [Retrieve Passive DNS Information for IP Address](#retrieve-passive-dns-information-for-ip-address) |  Retrieve on demand Passive DNS enrichment data for IP Address |
   | [Retrieve Whois Historic Information for Domain](#retrieve-whois-historic-information-for-domain) | Retrieve on demand Whois Historic enrichment data for Domain |
   | [Retrieve Whois Historic Information for Email Address](#retrieve-whois-historic-information-for-email-address) | Retrieve on demand Whois Historic enrichment data for Email Address |
-  | [Retrieve Whois Historic Information for Phone Number](#retrieve-whois-historic-information-for-phone-number) | Retrieve on demand Whois Historic enrichment data for PhoneNumber |
+  | [Retrieve Whois Historic Information for Phone Number](#retrieve-whois-historic-information-for-phone-number) | Retrieve on demand Whois Historic enrichment data for Phone Number |
   | [Retrieve Whois Current Information for Domain](#retrieve-whois-current-information-for-domain) | Retrieve on demand Whois Current enrichment data for Domain |
   | [Retrieve Dynamic DNS Information for IP Address](#retrieve-dynamic-dns-information-for-ip-address) | Retrieve on demand Dynamic DNS enrichment data for IP Address |
   | [Retrieve Dynamic DNS Information for Email Address](#retrieve-dynamic-dns-information-for-email-address) | Retrieve on demand Dynamic DNS enrichment data for Email Address |
@@ -131,7 +131,7 @@ Retrieve on demand Whois Historic enrichment data for Email Address
 
 Operation ID: PHONE_WHOIS_HISTORIC
 
-Retrieve on demand Whois Historic enrichment data for PhoneNumber
+Retrieve on demand Whois Historic enrichment data for Phone Number
 
  #### Parameters
 

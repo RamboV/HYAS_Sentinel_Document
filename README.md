@@ -71,7 +71,7 @@ Retrieve on demand Passive DNS enrichment data for domain.
 
 
 #### Returns
-##### **Body** : [PassiveDNSResults](#passivednsresults)
+##### **Body** : [Passive_DNS_Results](#passive_dns_results)
 
 <br>
 
@@ -89,7 +89,7 @@ Retrieve on demand Passive DNS enrichment data for IP address.
 
 
 #### Returns
-##### **Body** : [PassiveDNSResults](#passivednsresults)
+##### **Body** : [Passive_DNS_Results](#passive_dns_results)
 
 <br>
 
@@ -106,7 +106,7 @@ Retrieve on demand Whois historic enrichment data for domain.
  | Domain | domain | True | string | Domain you want to enrich. |
 
  #### Returns
-##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
+##### **Body** : [Whois_Historic_Results](#whois_historic_results)
 
 <br>
 
@@ -123,7 +123,7 @@ Retrieve on demand Whois historic enrichment data for email address.
  | Email address | email | True  | string | Email address you want to enrich. |
 
  #### Returns
-##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
+##### **Body** : [Whois_Historic_Results](#whois_historic_results)
 
 <br>
 
@@ -140,7 +140,7 @@ Retrieve on demand Whois historic enrichment data for phone number.
  | Phone number | phone | True  | string | Phone number you want to enrich.( e164 format. Eg: ( +41585855634 ) ) |
 
  #### Returns
-##### **Body** : [WhoisHistoricResult](#whoishistoricresult)
+##### **Body** : [Whois_Historic_Results](#whois_historic_results)
 
 <br>
 
@@ -158,7 +158,7 @@ Retrieve on demand Whois current enrichment data for domain.
 
 
  #### Returns
-##### **Body** : [WhoisCurrentResult](#whoiscurrentresult)
+##### **Body** : [Whois_Current_Results](#whois_current_results)
 
 
 <br>
@@ -177,7 +177,7 @@ Retrieve on demand Dynamic DNS enrichment data for IP address.
 
 
   #### Returns
-##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
+##### **Body** :  [Dynamic_DNS_Results](#dynamic_dns_results)
 
 <br>
 
@@ -194,7 +194,7 @@ Retrieve on demand Dynamic DNS enrichment data for email address.
  | Email address | email | True | string |Email address you want to enrich. |
  
   #### Returns
-##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
+##### **Body** :  [Dynamic_DNS_Results](#dynamic_dns_results)
 
 
 <br>
@@ -213,7 +213,7 @@ Retrieve on demand Passive Hash enrichment data for IP address.
 
 
  #### Returns
-##### **Body** : [passiveHashResult](#passivehashresult)
+##### **Body** : [passive_Hash_Results](#passive_hash_results)
 
 <br>
 
@@ -230,7 +230,7 @@ Retrieve on demand Sinkhole enrichment data for IP address.
  | IPv4 address | ipv4 | True | string | IPv4 address you want to enrich. |
 
  #### Returns
-##### **Body** :  [SinkholeResult](#sinkholeresult)
+##### **Body** :  [Sinkhole_Results](#sinkhole_results)
 
 <br>
 
@@ -247,7 +247,7 @@ Retrieve on demand Device Geo enrichment data for IPv4 address.
  | IPv4 address | ipv4 | True | string | IPv4 address you want to enrich. |
 
  #### Returns
-##### **Body** :  [DeviceGeoResult](#devicegeoresult)
+##### **Body** :  [Device_Geo_Results](#device_geo_results)
 
 <br>
 
@@ -265,7 +265,7 @@ Retrieve on demand Device Geo enrichment data for IPv6 address.
  
 
  #### Returns
-##### **Body** :  [DeviceGeoResult](#devicegeoresult)
+##### **Body** :  [Device_Geo_Results](#device_geo_results)
 
 <br>
 
@@ -283,7 +283,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
  | IPv4 address | ip | True | string | IPv4 address you want to enrich. |
  
  #### Returns
-##### **Body** : [SSLCertificateResult](#sslcertificateresult)
+##### **Body** : [SSL_Certificate_Results](#ssl_certificate_results)
 
 <br>
 

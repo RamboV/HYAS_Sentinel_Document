@@ -288,7 +288,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 <br>
 
 
-### PassiveDNSResults
+### Passive_DNS_Results
 
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
@@ -317,7 +317,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 <br>
 
 
-### WhoIsHistoricResult
+### Whois_Historic_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |address | address | string array | The address information. |
@@ -346,7 +346,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 
 <br>
 
-### WhoIsCurrentResult
+### Whois_Current_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 | abuse_emails | items.abuse_emails | string array | The abuse emails information. | 
@@ -390,7 +390,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 
 <br>
 
-### DynamicDNSResult
+### Dynamic_DNS_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |a_record | a_record | string | The A record for the domain. |
@@ -404,7 +404,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 <br>
 
 
-### PassiveHashResult
+### Passive_Hash_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |domain | domain | string | The domain of the passive hash information requested. |
@@ -413,7 +413,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 <br>
 
 
-### SinkholeResult
+### Sinkhole_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |count | count | string | The sinkhole count. |
@@ -428,7 +428,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 <br>
 
 
-### DeviceGeoResult
+### Device_Geo_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |datetime | datetime | string | A date-time string in RFC 3339 format. |
@@ -446,7 +446,7 @@ Retrieve on demand SSL certificate enrichment data for IP address.
 <br>
 
 
-### SSLCertificateResult
+### SSL_Certificate_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |related_count | related_count | number | The number of ip addresses connected to this certificate. |

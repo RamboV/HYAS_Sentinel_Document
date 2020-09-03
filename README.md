@@ -106,7 +106,7 @@ Retrieve Historic WHOIS enrichment data for domain.
  | Domain | domain | True | string | Domain you want to enrich. |
 
  #### Returns
-##### **Body** : [Whois_Historic_Results](#whois_historic_results)
+##### **Body** : [Historic_WHOIS_Results](#historic_whois_results)
 
 <br>
 
@@ -123,7 +123,7 @@ Retrieve Historic WHOIS enrichment data for email address.
  | Email address | email | True  | string | Email address you want to enrich. |
 
  #### Returns
-##### **Body** : [Whois_Historic_Results](#whois_historic_results)
+##### **Body** : [Historic_WHOIS_Results](#historic_whois_results)
 
 <br>
 
@@ -140,7 +140,7 @@ Retrieve Historic WHOIS enrichment data for phone number.
  | Phone number | phone | True  | string | Phone number you want to enrich.( e164 format. Eg: ( +41585855634 ) ) |
 
  #### Returns
-##### **Body** : [Whois_Historic_Results](#whois_historic_results)
+##### **Body** : [Historic_WHOIS_Results](#historic_whois_results)
 
 <br>
 
@@ -158,7 +158,7 @@ Retrieve Current WHOIS enrichment data for domain.
 
 
  #### Returns
-##### **Body** : [Whois_Current_Results](#whois_current_results)
+##### **Body** : [Current_WHOIS_Results](#current_whois_results)
 
 
 <br>
@@ -317,7 +317,7 @@ Retrieve SSL certificate enrichment data for IP address.
 <br>
 
 
-### Whois_Historic_Results
+### Historic_WHOIS_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |address | address | string array | The address information. |
@@ -346,7 +346,7 @@ Retrieve SSL certificate enrichment data for IP address.
 
 <br>
 
-### Whois_Current_Results
+### Current_WHOIS_Results
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 | abuse_emails | items.abuse_emails | string array | The abuse emails information. | 

@@ -1,7 +1,7 @@
 # HYAS Insight
 
 ![HYAS](https://www.hyas.com/hubfs/logo-1.svg "HYAS")
-HYAS Insight provides On-Demand Enrichment of Passive DNS, Dynamic DNS, Passive Hash, SSL Certificate, Device Geo (Mobile Geolocation), Sinkhole, and Whois endpoints using the HYAS Insight enrichment API source.
+HYAS Insight integration to Microsoft Azure Sentinel provides direct, high volume access to HYAS Insight data. It enables investigators and analysts to understand and defend against cyber adversaries and their infrastructure.
 
 <br>
 
@@ -40,19 +40,19 @@ To connect your account, you will need the following information:
  ## Actions:
  | Action Name | Description
   | ------ | ------ |
-  | [Retrieve Passive DNS information for domain](#retrieve-passive-dns-information-for-domain) |  Retrieve on demand Passive DNS enrichment data for domain. |
-  | [Retrieve Passive DNS information for IP address](#retrieve-passive-dns-information-for-ip-address) |  Retrieve on demand Passive DNS enrichment data for IP address. |
-  | [Retrieve Whois historic information for domain](#retrieve-whois-historic-information-for-domain) | Retrieve on demand Whois historic enrichment data for domain. |
-  | [Retrieve Whois historic information for email address](#retrieve-whois-historic-information-for-email-address) | Retrieve on demand Whois historic enrichment data for email address. |
-  | [Retrieve Whois historic information for phone number](#retrieve-whois-historic-information-for-phone-number) | Retrieve on demand Whois historic enrichment data for phone number. |
-  | [Retrieve Whois current information for domain](#retrieve-whois-current-information-for-domain) | Retrieve on demand Whois current enrichment data for domain. |
-  | [Retrieve Dynamic DNS information for IP address](#retrieve-dynamic-dns-information-for-ip-address) | Retrieve on demand Dynamic DNS enrichment data for IP address. |
-  | [Retrieve Dynamic DNS information for email address](#retrieve-dynamic-dns-information-for-email-address) | Retrieve on demand Dynamic DNS enrichment data for email address. |
-  | [Retrieve Passive Hash information for IP address](#retrieve-passive-hash-information-for-ip-address) |Retrieve on demand Passive Hash enrichment data for IP address. |
-  | [Retrieve Sinkhole information for IP address](#retrieve-sinkhole-information-for-ip-address) | Retrieve on demand Sinkhole enrichment data for IP address. |
-  | [Retrieve SSL certificate information for IP address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve on demand SSL certificate enrichment data for IP address. |
-  | [Retrieve Device Geo information for IPv4 address](#retrieve-device-geo-information-for-ipv4-address) | Retrieve on demand Device Geo enrichment data for IPv4 address. |
-  | [Retrieve Device Geo information for IPv6 address](#retrieve-device-geo-information-for-ipv6-address) | Retrieve on demand Device Geo enrichment data for IPv6 address. |
+  | [Retrieve Passive DNS information for domain](#retrieve-passive-dns-information-for-domain) |  Retrieve Passive DNS enrichment data for domain. |
+  | [Retrieve Passive DNS information for IP address](#retrieve-passive-dns-information-for-ip-address) |  Retrieve Passive DNS enrichment data for IP address. |
+  | [Retrieve Historic WHOIS information for domain](#retrieve-historic-whois-information-for-domain) | Retrieve Historic WHOIS enrichment data for domain. |
+  | [Retrieve Historic WHOIS information for email address](#retrieve-historic-whois-information-for-email-address) | Retrieve Historic WHOIS enrichment data for email address. |
+  | [Retrieve Historic WHOIS information for phone number](#retrieve-historic-whois-information-for-phone-number) | Retrieve Historic WHOIS enrichment data for phone number. |
+  | [Retrieve Current WHOIS information for domain](#retrieve-current-whois-information-for-domain) | Retrieve Current WHOIS enrichment data for domain. |
+  | [Retrieve Dynamic DNS information for IP address](#retrieve-dynamic-dns-information-for-ip-address) | Retrieve Dynamic DNS enrichment data for IP address. |
+  | [Retrieve Dynamic DNS information for email address](#retrieve-dynamic-dns-information-for-email-address) | Retrieve Dynamic DNS enrichment data for email address. |
+  | [Retrieve Passive Hash information for IP address](#retrieve-passive-hash-information-for-ip-address) |Retrieve Passive Hash enrichment data for IP address. |
+  | [Retrieve Sinkhole information for IP address](#retrieve-sinkhole-information-for-ip-address) | Retrieve Sinkhole enrichment data for IP address. |
+  | [Retrieve SSL certificate information for IP address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve SSL certificate enrichment data for IP address. |
+  | [Retrieve Device Geo information for IPv4 address](#retrieve-device-geo-information-for-ipv4-address) | Retrieve Device Geo enrichment data for IPv4 address. |
+  | [Retrieve Device Geo information for IPv6 address](#retrieve-device-geo-information-for-ipv6-address) | Retrieve Device Geo enrichment data for IPv6 address. |
   
 
 <br>
@@ -61,7 +61,7 @@ To connect your account, you will need the following information:
 
 Operation ID: DOMAIN_PASSIVE_DNS
 
-Retrieve on demand Passive DNS enrichment data for domain.
+Retrieve Passive DNS enrichment data for domain.
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Retrieve on demand Passive DNS enrichment data for domain.
 
 Operation ID: IP_PASSIVE_DNS
 
-Retrieve on demand Passive DNS enrichment data for IP address.
+Retrieve Passive DNS enrichment data for IP address.
 
 #### Parameters
 
@@ -93,11 +93,11 @@ Retrieve on demand Passive DNS enrichment data for IP address.
 
 <br>
 
-### Retrieve Whois historic information for domain
+### Retrieve Historic WHOIS information for domain
 
 Operation ID: DOMAIN_WHOIS_HISTORIC
 
-Retrieve on demand Whois historic enrichment data for domain.
+Retrieve Historic WHOIS enrichment data for domain.
 
  #### Parameters
 
@@ -110,11 +110,11 @@ Retrieve on demand Whois historic enrichment data for domain.
 
 <br>
 
-### Retrieve Whois historic information for email address
+### Retrieve Historic WHOIS information for email address
 
 Operation ID: EMAIL_WHOIS_HISTORIC
 
-Retrieve on demand Whois historic enrichment data for email address.
+Retrieve Historic WHOIS enrichment data for email address.
 
  #### Parameters
 
@@ -127,11 +127,11 @@ Retrieve on demand Whois historic enrichment data for email address.
 
 <br>
 
-### Retrieve Whois historic information for phone number
+### Retrieve Historic WHOIS information for phone number
 
 Operation ID: PHONE_WHOIS_HISTORIC
 
-Retrieve on demand Whois historic enrichment data for phone number.
+Retrieve Historic WHOIS enrichment data for phone number.
 
  #### Parameters
 
@@ -144,11 +144,11 @@ Retrieve on demand Whois historic enrichment data for phone number.
 
 <br>
 
-### Retrieve Whois current information for domain
+### Retrieve Current WHOIS information for domain
 
-Operation ID: WHOIS_CURRENT
+Operation ID: DOMAIN_WHOIS_CURRENT
 
-Retrieve on demand Whois current enrichment data for domain.
+Retrieve Current WHOIS enrichment data for domain.
 
  #### Parameters
 
@@ -167,7 +167,7 @@ Retrieve on demand Whois current enrichment data for domain.
 
 Operation ID: IP_DYNAMIC_DNS
 
-Retrieve on demand Dynamic DNS enrichment data for IP address.
+Retrieve Dynamic DNS enrichment data for IP address.
 
  #### Parameters
 
@@ -185,7 +185,7 @@ Retrieve on demand Dynamic DNS enrichment data for IP address.
 
 Operation ID: DYNAMIC_DNS
 
-Retrieve on demand Dynamic DNS enrichment data for email address.
+Retrieve Dynamic DNS enrichment data for email address.
 
  #### Parameters
 
@@ -203,7 +203,7 @@ Retrieve on demand Dynamic DNS enrichment data for email address.
 
 Operation ID: PASSIVE_HASH
 
-Retrieve on demand Passive Hash enrichment data for IP address.
+Retrieve Passive Hash enrichment data for IP address.
 
  #### Parameters
 
@@ -221,7 +221,7 @@ Retrieve on demand Passive Hash enrichment data for IP address.
 
 Operation ID: SINKHOLE
 
-Retrieve on demand Sinkhole enrichment data for IP address.
+Retrieve Sinkhole enrichment data for IP address.
 
  #### Parameters
 
@@ -238,7 +238,7 @@ Retrieve on demand Sinkhole enrichment data for IP address.
 
 Operation ID: IPV4_DEVICE_GEO
 
-Retrieve on demand Device Geo enrichment data for IPv4 address.
+Retrieve Device Geo enrichment data for IPv4 address.
 
  #### Parameters
 
@@ -255,7 +255,7 @@ Retrieve on demand Device Geo enrichment data for IPv4 address.
 
 Operation ID: IPV6_DEVICE_GEO
 
-Retrieve on demand Device Geo enrichment data for IPv6 address.
+Retrieve Device Geo enrichment data for IPv6 address.
 
  #### Parameters
 
@@ -274,7 +274,7 @@ Retrieve on demand Device Geo enrichment data for IPv6 address.
 
  Operation ID: SSL_CERTIFICATE
 
-Retrieve on demand SSL certificate enrichment data for IP address.
+Retrieve SSL certificate enrichment data for IP address.
 
  #### Parameters
 

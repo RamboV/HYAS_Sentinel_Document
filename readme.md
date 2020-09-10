@@ -9,7 +9,7 @@ You will need the following to proceed:
 * HYAS Insight API Key
 
 ## Supported Operations
-Details of all the supported operations, inputs and outputs are available [here](https://docs.microsoft.com/en-gb/connectors/HYAS Insight/).
+Details of all the supported operations, inputs and outputs are available [here](https://docs.microsoft.com/en-gb/connectors/hyasinsight/).
 
 ## Support and documentation: 
 For all the support requests and general queries you can contact support@hyas.com or visit [contact-us](https://www.hyas.com/contact)

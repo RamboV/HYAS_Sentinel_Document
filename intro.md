@@ -6,4 +6,4 @@ You will need the following to proceed:
 * HYAS Insight API Key
 
 ## Support and documentation: 
-For all the support requests and general queries you can contact support@hyas.com or visit [contact-us](https://www.hyas.com/contact)
+For all the support requests and general queries you can contact support@farsightsecurity.com or visit [contact-us](https://www.farsightsecurity.com/about-farsight-security/contacts/)
